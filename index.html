@@ -1,16 +1,38 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Salsa&display=swap" rel="stylesheet">
     <script src="main.js" defer></script>
     <title>To-Do List</title>
 </head>
+
 <body>
-    <h1>To-Do-List</h1>
-    <input type="text" id="inputField" placeholder="Enter your task...">
-    <button id="addButton">Add</button>
-    <ul id="list"></ul>
+    <div class="container">
+        <section class="top">
+            <h1>To-Do List</h1>
+            <p>Enter text into the input field to add items to your list</p>
+            <br>
+            <p>Click the item to mark it as done</p>
+            <br>
+            <p>Click the "X" to delete the item</p>
+        </section>
+
+        <section class="middle">
+            <input type="text" id="inputField" placeholder="Enter your task...">
+            <button id="addButton"><i class="fa-solid fa-pencil"></i></button>
+        </section>
+
+        <section class="bottom">
+            <ul id="list"></ul>
+        </section>
+    </div>
 </body>
+
 </html>
